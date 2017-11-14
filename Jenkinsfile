@@ -4,6 +4,7 @@ pipeline {
     stage('test 1') {
       steps {
         ansiblePlaybook(playbook: 'test', colorized: true, inventory: 'testinv')
+        sleep 51
       }
     }
   }
